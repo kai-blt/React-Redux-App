@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createGlobalStyle } from 'styled-components'
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk'
 import { Provider } from 'react-redux'
 import { reducer } from './reducers'
 
@@ -35,10 +36,24 @@ const GlobalStyle = createGlobalStyle`
     border: 1px solid red;
     padding: 2% 0;
   }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  button {
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 0;
+    padding: 1% 2%;
+    margin: 2% 0;
+  }
 `;
 
 //Setup Redux Store
-const store = createStore(reducer);
+const store = createStore(reducer, applyMiddleware(thunk));
 
 //Store debug
 console.log(store.getState())
