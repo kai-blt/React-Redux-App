@@ -12,7 +12,7 @@ export const getCards = () => dispatch => {
     axios.get('https://api.magicthegathering.io/v1/cards')
         .then(res => {
             console.log(res);
-            dispatch({ type: GET_CARDS_SUCCESS, payload: res});
+            dispatch({ type: GET_CARDS_SUCCESS, payload: res.data.cards});
         })
         .catch(err => {
             console.log(err);
