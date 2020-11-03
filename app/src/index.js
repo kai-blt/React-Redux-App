@@ -26,6 +26,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
     line-height: 1.6rem;
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    border: 1px solid red;
+    padding: 2% 0;
   }
 `;
 
