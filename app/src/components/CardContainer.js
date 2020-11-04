@@ -17,14 +17,16 @@ const Container = styled.div`
     margin: 2% 0;
 `;
 
+const ErrorContainer = styled.p`
+    color: red;
+`;
+
 const CardContainer = (props) => {
     return (
         <>
         <div>   
-            { props.isFetching 
-                ? 'One moment, getting cards...'
-                : null
-            }
+            { props.isFetching ? <p>'One moment, getting cards...'</p> : null }
+            { props.error ? <ErrorContainer>{`OOPS! We're sorry...${props.error}`}</ErrorContainer> : null }
         </div>
         <Container>            
             { console.log(props.cards.length) }
