@@ -27,7 +27,18 @@ const CardContainer = (props) => {
 
             { console.log(props.cards.length) }
             { props.cards.length > 0 
-                ? props.cards.map(item => <Card key={item.id} image_url={item.imageUrl} />)
+                ? props.cards.filter(item => item.imageUrl !== undefined).map(item => {
+                    return(
+                        <Card 
+                            key={item.id}
+                            name={item.name}
+                            artist={item.artist}
+                            rarity={item.rarity}
+                            setName={item.setName}
+                            image_url={item.imageUrl}
+                        />
+                    )
+                })
                 : 'No cards found'
             }
         </Container>

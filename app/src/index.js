@@ -28,9 +28,11 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: #333;
     color: #fff;
+    text-shadow: 2px 2px 2px #000;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
+    font-weight: 300;
     line-height: 1.6rem;
     height: 100vh;
     width: 80%;
@@ -38,9 +40,33 @@ const GlobalStyle = createGlobalStyle`
     padding: 2% 0;
   }
 
-  h1 {
-    font-size: 4rem;
+  h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
+    margin: 4% 0;
+  }
+
+  h1 {      
+    font-size: 6rem;
+  }
+
+  h2 {      
+    font-size: 5rem;
+  }
+
+  h3 {      
+    font-size: 4rem;
+  }
+
+  h4 {      
+    font-size: 3rem;
+  }
+
+  h5 {      
+    font-size: 2rem;
+  }
+
+  h6 {      
+    font-size: 1rem;
   }
 
   button {
