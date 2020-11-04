@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { createGlobalStyle } from 'styled-components'
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk'
+import { logger } from 'redux-logger'
 import { Provider } from 'react-redux'
 import { reducer } from './Redux/reducers'
 
@@ -80,7 +81,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 //Setup Redux Store
-const store = createStore(reducer, applyMiddleware(thunk));
+const store = createStore(reducer, applyMiddleware(thunk, logger));
 
 //Store debug
 console.log(store.getState())
