@@ -17,15 +17,29 @@ const Container = styled.div`
     margin: 2% 0;
 `;
 
+const FetchContainer = styled.p`
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 1%;
+    height: 5vh;
+    background-color: #222;
+    width: 100%;
+`;
+
 const ErrorContainer = styled.p`
-    color: red;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 1%;
+    height: 5vh;
+    background-color: red;
+    width: 100%;
 `;
 
 const CardContainer = (props) => {
     return (
         <>
         <div>   
-            { props.isFetching ? <p>'One moment, getting cards...'</p> : null }
+            { props.isFetching ? <FetchContainer>'One moment, getting cards...'</FetchContainer> : null }
             { props.error ? <ErrorContainer>{`OOPS! We're sorry...${props.error}`}</ErrorContainer> : null }
         </div>
         <Container>            

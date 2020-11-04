@@ -90,6 +90,10 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  label {
+    font-size: 2rem;
+  }
+
   input {
     box-shadow: inset 2px 2px 4px #222;
   }
