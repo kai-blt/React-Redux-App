@@ -50,23 +50,23 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h2 {      
-    font-size: 5rem;
-  }
-
-  h3 {      
     font-size: 4rem;
   }
 
-  h4 {      
+  h3 {      
     font-size: 3rem;
   }
 
-  h5 {      
+  h4 {      
     font-size: 2rem;
   }
 
-  h6 {      
+  h5 {      
     font-size: 1rem;
+  }
+
+  h6 {      
+    font-size: 0.5rem;
   }
 
   button, input {

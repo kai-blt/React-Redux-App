@@ -19,12 +19,14 @@ const Container = styled.div`
 
 const CardContainer = (props) => {
     return (
-        <Container>
+        <>
+        <div>   
             { props.isFetching 
                 ? 'One moment, getting cards...'
                 : null
             }
-
+        </div>
+        <Container>            
             { console.log(props.cards.length) }
             { props.cards.length > 0 
                 ? props.cards.filter(item => item.imageUrl !== undefined).map(item => {
@@ -39,9 +41,10 @@ const CardContainer = (props) => {
                         />
                     )
                 })
-                : null
+                : 'No cards found'
             }
         </Container>
+        </>
     )
 }
 

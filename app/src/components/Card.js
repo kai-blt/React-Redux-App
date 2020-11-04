@@ -12,12 +12,16 @@ const Card = (props) => {
             <div>  
                 <h4>{props.name}</h4>
                 <h5>{props.artist}</h5>
-                <p>Rarity: {props.rarity}</p>
+            </div>
+            <div>                
+                <img src={props.image_url} alt={props.id}/>
+            </div>
+            <div>
+               
+            <p>Rarity: {props.rarity}</p>
                 <p>Set: {props.setName}</p>
             </div>
-           
 
-            <img src={props.image_url} alt={props.id}/>
         </Container>
     )
 }
