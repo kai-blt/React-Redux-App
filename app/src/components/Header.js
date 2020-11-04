@@ -7,6 +7,35 @@ import styled from 'styled-components'
 
 const HeaderContainer = styled.div`
     margin: 4% 0;
+
+    @media (max-width: 1200px) {
+        h1 {
+            font-size: 5rem;
+        }
+        button, input {
+            width: 100%;
+        }
+    }
+
+
+    @media (max-width: 800px) {
+        h1 {
+            font-size: 3.5rem;
+        }
+        button, input {
+            width: 100%;
+        }
+    }
+
+
+    @media (max-width: 500px) {
+        h1 {
+            font-size: 2.5rem;
+        }
+        button, input {
+            width: 100%;
+        }
+    }
 `;
 
 const Header = (props) => {

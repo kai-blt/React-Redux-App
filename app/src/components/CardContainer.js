@@ -9,10 +9,10 @@ const Container = styled.div`
     display: flex;
     flex-flow: row wrap;
     border-radius: 10px;
-    background-color: #555;
+    background-color: #222;
     justify-content: space-evenly;
     align-content: space-between;
-    box-shadow: 20px 20px 40px #222;
+    box-shadow: inset 20px 20px 40px #000;
     padding: 2%;
     margin: 2% 0;
 `;

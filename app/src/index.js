@@ -27,14 +27,17 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #333;
+    background: url('https://media.magic.wizards.com/images/wallpaper/raugrin-triome_iko_1920x1080_wallpaper.jpg');
+    background-attachment: fixed;
+    background-size: cover;
     color: #fff;
-    text-shadow: 2px 2px 2px #000;
+    text-shadow: 4px 4px 4px #000;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.6rem;
+    letter-spacing: 2px;
     height: 100vh;
     width: 80%;
     margin: auto;
@@ -76,16 +79,21 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 5px;
     border: 0;
     padding: 1% 2%;
-    margin: 2% 2%;
+    margin: 2% 2%;   
   }
 
   button {
+    box-shadow: 5px 5px 15px #222;
     &:hover {
       color: #444;
-      background-color: #666;
-      box-shadow: 5px 5px 15px #222;
+      background-color: #666;      
     }
   }
+
+  input {
+    box-shadow: inset 2px 2px 4px #222;
+  }
+
 `;
 
 //Setup Redux Store
