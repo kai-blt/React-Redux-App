@@ -8,8 +8,9 @@ export const getCards = () => dispatch => {
     //Set state to getting cards...
     dispatch({ type: GET_CARDS_START });
 
+    const random = Math.round(Math.random() * 100);
     //Make axios request and dispatch appropriate data dependant upon result
-    axios.get('https://api.magicthegathering.io/v1/cards?random') 
+    axios.get(`https://api.magicthegathering.io/v1/cards?page=${random}`) 
         .then(res => {
             console.log(res);
             dispatch({ type: GET_CARDS_SUCCESS, payload: res.data.cards});

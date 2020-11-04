@@ -78,6 +78,14 @@ const GlobalStyle = createGlobalStyle`
     padding: 1% 2%;
     margin: 2% 2%;
   }
+
+  button {
+    &:hover {
+      color: #444;
+      background-color: #666;
+      box-shadow: 5px 5px 15px #222;
+    }
+  }
 `;
 
 //Setup Redux Store
