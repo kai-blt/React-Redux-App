@@ -20,7 +20,7 @@ export const reducer = (state = initialState, action) => {
         case GET_CARDS_SUCCESS:
             return {
                 ...state,
-                cards: [...state.cards, action.payload],
+                cards: [...state.cards, ...action.payload],
                 isFetching: false,
                 error: ''
             }

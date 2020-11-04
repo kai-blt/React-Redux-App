@@ -1,5 +1,5 @@
 import Header from './components/Header'
-import CardContainer from './components/Card';
+import CardContainer from './components/CardContainer';
 
 
 

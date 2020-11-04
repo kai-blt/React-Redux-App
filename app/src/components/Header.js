@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { getCards } from '../actions'
+import { getCards } from '../Redux/actions'
+import { mapStateToProps } from '../Redux'
 
 const Header = (props) => {
     return (
@@ -12,12 +13,5 @@ const Header = (props) => {
 }
 
 
-const mapStateToProps = (state) => {
-    return {        
-        cards: state.cards,
-        isFetching: state.isFetching,
-        error: state.error
-    }
-}
 
 export default connect(mapStateToProps, { getCards })(Header);

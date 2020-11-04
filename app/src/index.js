@@ -7,7 +7,7 @@ import { createGlobalStyle } from 'styled-components'
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk'
 import { Provider } from 'react-redux'
-import { reducer } from './reducers'
+import { reducer } from './Redux/reducers'
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -26,6 +26,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    background-color: #333;
+    color: #fff;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
@@ -33,7 +35,6 @@ const GlobalStyle = createGlobalStyle`
     height: 100vh;
     width: 80%;
     margin: auto;
-    border: 1px solid red;
     padding: 2% 0;
   }
 

@@ -1,8 +1,16 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const Container = styled.div`
+    margin: 2%;
+`;
+
 
 const Card = (props) => {
     return (
-        <h1>Hello I'm a card</h1>
+        <Container>
+            <img src={props.image_url} alt={props.id}/>
+        </Container>
     )
 }
 
