@@ -69,13 +69,13 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
   }
 
-  button {
+  button, input {
     font-size: 2rem;
     font-weight: 700;
     border-radius: 5px;
     border: 0;
     padding: 1% 2%;
-    margin: 2% 0;
+    margin: 2% 2%;
   }
 `;
 

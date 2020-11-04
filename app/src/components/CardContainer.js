@@ -39,7 +39,7 @@ const CardContainer = (props) => {
                         />
                     )
                 })
-                : 'No cards found'
+                : null
             }
         </Container>
     )
