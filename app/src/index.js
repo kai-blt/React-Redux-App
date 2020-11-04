@@ -29,7 +29,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: url('https://media.magic.wizards.com/images/wallpaper/raugrin-triome_iko_1920x1080_wallpaper.jpg');
     background-attachment: fixed;
-    background-size: cover;
     color: #fff;
     text-shadow: 4px 4px 4px #000;
     text-align: center;
