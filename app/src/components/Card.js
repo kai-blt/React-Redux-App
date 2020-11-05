@@ -5,7 +5,7 @@ const Container = styled.div`
     margin: 4%;
     position: relative;
     z-index: 0;
-    padding: 0;
+    padding: 2%;
     &:hover {
             top: 0;
             left: 0;

@@ -53,7 +53,7 @@ const CardContainer = (props) => {
             { props.error ? <ErrorContainer>{`OOPS! We're sorry...${props.error}`}</ErrorContainer> : null }
         </div>
         <Container>            
-            { console.log(props.cards.length) }
+            {/* { console.log(props.cards.length) } */}
             { props.cards.length > 0 
                 ? props.cards.filter(item => item.imageUrl !== undefined).map(item => {
                     return(
