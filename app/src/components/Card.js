@@ -9,16 +9,17 @@ const Container = styled.div`
     &:hover {
             top: 0;
             left: 0;
-            width: 30%;
+            width: 25%;
             margin: 0;
             z-index: 1;
-            transform: deg(360);
-            transition: all 0.5s ease-in-out;
+            transition-delay: 2s;
+            transition: all 1s ease-in-out;
         }
     img {
         width: 100%;
     }
-    transition: all 0.5s ease-in-out;
+    transition-delay: 2s;
+    transition: all 1s ease-in-out;
 `;
 
 
