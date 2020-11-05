@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import Card from './Card';
 
 
+
+
 const Container = styled.div`
     display: flex;
     flex-flow: row wrap;
@@ -20,10 +22,18 @@ const Container = styled.div`
 const FetchContainer = styled.p`
     font-size: 2rem;
     border-radius: 10px;
-    padding: 1%;
-    height: 5vh;
+    padding: 2%;
     background-color: #222;
     width: 100%;
+
+    img {        
+        animation: rotate 1s linear infinite;
+        @keyframes rotate {
+            100% {
+            transform: rotate(360deg);
+            }
+        }
+    }
 `;
 
 const ErrorContainer = styled.p`
@@ -39,7 +49,7 @@ const CardContainer = (props) => {
     return (
         <>
         <div>   
-            { props.isFetching ? <FetchContainer>'One moment, getting cards...'</FetchContainer> : null }
+            { props.isFetching ? <FetchContainer><img src='/MTG Black.png' /><img src='/MTG Red.png' /><img src='/MTG Green.png' /><img src='/MTG Blue.png' /><img src='/MTG White.png' />&nbsp;One moment, getting cards...&nbsp;<img src='/MTG White.png' /><img src='/MTG Blue.png' /><img src='/MTG Green.png' /><img src='/MTG Red.png' /><img src='/MTG Black.png' /></FetchContainer> : null }
             { props.error ? <ErrorContainer>{`OOPS! We're sorry...${props.error}`}</ErrorContainer> : null }
         </div>
         <Container>            
